@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saki Verso — Lâmina Neon</title>
+<meta name="description" content="Saki Verso: Lâmina Neon. Um side-scroller 2D estilo Rygar com 5 fases, chefes e um Super Boss. Jogue no navegador e contribua pelo GitHub.">
+<meta name="theme-color" content="#07040f">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Saki Verso — Lâmina Neon">
+<meta property="og:description" content="Jogo 2D estilo Rygar, open source. Jogue no navegador, com teclado ou controle.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2307040f'/%3E%3Cpath d='M6 26 L22 6 L26 10 L10 28Z' fill='%2300e5ff'/%3E%3Cpath d='M20 4 L28 12' stroke='%23ff3cf2' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio" aria-label="Saki Verso, início">Saki Verso</a>
+  <nav aria-label="Principal">
+    <a href="#jogar">Jogar</a>
+    <a href="#fases">Fases</a>
+    <a href="#contribuir">Contribuir</a>
+    <a class="gh" href="https://github.com/SakiVerso/saki-verso" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <h1 class="logo"><span>SAKI</span><span>VERSO</span></h1>
+    <p class="blade">Lâmina Neon</p>
+    <p class="slogan">Onde o Mundo Gamer e Tecnologia estão sempre On</p>
+    <p class="lead">Uma heroína, uma espada de luz e cinco mundos corrompidos. Atravesse cada fase, derrote os chefes e enfrente o Super Boss no Núcleo do Mal.</p>
+    <a class="cta" href="#jogar">Jogar agora</a>
+  </section>
+
+  <section id="jogar" class="play">
+    <div id="stage" class="stage">
+      <canvas id="c" width="800" height="450" tabindex="0" aria-label="Jogo Saki Verso: Lâmina Neon"></canvas>
+    </div>
+    <div class="bar">
+      <button id="btn-full" type="button">Tela cheia (F)</button>
+      <button id="btn-mute" type="button" aria-pressed="false">Som ligado</button>
+      <span class="hint">Clique no jogo e aperte Enter ou Espaço para começar.</span>
+    </div>
+
+    <div class="controls">
+      <h2>Controles</h2>
+      <dl>
+        <div><dt>Mover</dt><dd>Setas ou A / D · direcional do controle</dd></div>
+        <div><dt>Pular</dt><dd>Espaço, W ou ↑ · botão ✕</dd></div>
+        <div><dt>Espada</dt><dd>X ou J · botão □</dd></div>
+        <div><dt>Shuriken</dt><dd>Z ou K · botão ○ ou R1</dd></div>
+        <div><dt>Shuriken para cima</dt><dd>C ou L · botão △</dd></div>
+        <div><dt>Especial</dt><dd>E ou Shift · botão L1 (quando a barra estiver cheia)</dd></div>
+        <div><dt>Pausa, som, tela cheia</dt><dd>P ou Esc · M · F</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="fases" class="stages">
+    <h2>Cinco mundos, cinco chefes</h2>
+    <p class="sub">A cada fase vencida a Saki ganha um novo poder de shuriken. Pisar em um inimigo terrestre o atordoa; orbes dourados aumentam o alcance da espada.</p>
+    <ol>
+      <li style="--ac:#40ffa0"><strong>Floresta Neon</strong><span>Chefe: Guardião de Pedra</span></li>
+      <li style="--ac:#c080ff"><strong>Castelo Arruinado</strong><span>Chefe: Verme Cristalino</span></li>
+      <li style="--ac:#80ffd0"><strong>Cemitério Assombrado</strong><span>Chefe: Andróide Defeituoso</span></li>
+      <li style="--ac:#ff4060"><strong>Salão do Trono Corrompido</strong><span>Chefe: Cavaleiro Sombrio</span></li>
+      <li style="--ac:#ffffff" class="final"><strong>O Núcleo do Mal</strong><span>Super Boss: Soberano do Núcleo, em duas fases</span></li>
+    </ol>
+  </section>
+
+  <section id="contribuir" class="contrib">
+    <h2>O jogo é aberto. Venha construir junto.</h2>
+    <p class="sub">O código está no GitHub e qualquer pessoa pode propor melhorias. Cada melhoria aprovada entra no site automaticamente.</p>
+    <div class="ways">
+      <article>
+        <h3>Achou um bug?</h3>
+        <p>Abra uma <em>Issue</em> contando o que aconteceu, em qual fase e com teclado ou controle.</p>
+        <a href="https://github.com/SakiVerso/saki-verso/issues" target="_blank" rel="noopener">Abrir Issue</a>
+      </article>
+      <article>
+        <h3>Tem uma ideia?</h3>
+        <p>Novo inimigo, nova fase, um poder diferente? Conte para a gente antes de começar a fazer.</p>
+        <a href="https://github.com/SakiVerso/saki-verso/discussions" target="_blank" rel="noopener">Sugerir ideia</a>
+      </article>
+      <article>
+        <h3>Quer mexer no código?</h3>
+        <p>Faça um <em>Fork</em>, altere o que quiser e envie um <em>Pull Request</em>. Todo o passo a passo está no README.</p>
+        <a href="https://github.com/SakiVerso/saki-verso#como-contribuir" target="_blank" rel="noopener">Ler o guia</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Saki Verso — Lâmina Neon. Projeto independente e open source.</p>
+  <p>Sprites da Saki, zumbis e esqueletos: CraftPix. Música e efeitos gerados por código.</p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>
