@@ -4,7 +4,7 @@ Side-scroller 2D inspirado em Rygar, feito em HTML5 Canvas e JavaScript puro. Ci
 
 > Onde o Mundo Gamer e Tecnologia estão sempre On
 
-**Jogar:** coloque aqui o endereço do site na Vercel depois da publicação.
+https://saki-verso-saki-verso.vercel.app
 
 ## O jogo
 
